@@ -1,0 +1,319 @@
+.countHelp{
+    position: relative;
+    &__color{
+        @include center(absolute);
+        top: 56.8%;
+        width: 100%;
+        margin: auto;
+        height: 600px;
+        &-img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &__content{
+        padding-top: 137px;
+    }
+    &__count{
+        &-boxPresent{
+            background-image: url('../images/hand.png');
+            background-repeat: no-repeat;
+            border-radius: 4px;
+            background-position: center;
+            padding: 36px 47px;
+            background-color: #fd5a5a;
+        }
+        &-boxGirl{
+            background-image: url('../images/hand.png');
+            background-repeat: no-repeat;
+            border-radius: 4px;
+            background-position: center;
+            padding: 36px 47px;
+            background-color: #0fc392;
+        }
+        &-boxBag{
+            background-image: url('../images/hand.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            border-radius: 4px;
+            padding: 36px 47px;
+            background-color: #f37a32;
+        }
+        font-family: $font-vidaloka;
+        &-img{
+            margin-top: 27px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 30px;
+            width: 70px;
+            height: 70px;
+        }
+        &-boxTitle{
+            margin-bottom: 21px;
+            font-size: 27px;
+            font-weight: 400;
+            color: #ffffff;
+            @include breakpoint(1199){
+                font-size: 21px;
+              }
+        }
+        &-boxDescription{
+            line-height: 29px;
+            color: #ffffff;
+            font-family: $font-ibm;
+        }
+        &-btn{
+            justify-content: center;
+            align-items: center;
+            margin-top: 27px;
+            margin-bottom: 27px;
+        }
+        &-arrow{
+            width: 10px;
+            height: 10px;
+            position: absolute;
+            @include center(absolute);
+            left: 84%;
+            top: 53%;
+        }
+        &-link{
+            position: relative;
+            font-size: 13px;
+            text-transform: uppercase;
+            color: #ffffff;
+            font-family: $font-ibm;
+            font-weight: 400;
+            border-radius: 4px;
+            padding: 10px 40px;
+            transition: all ease-in-out 0.2s;
+            border: 2px solid #ffffff;
+                &:hover{
+                    color: #ffffff;
+                    box-shadow: 0px 5px 8px 3px rgba($color: #242323, $alpha: 0.4);
+                }
+        }
+    }
+    &__help{
+        margin-top: 141px;
+        &-row{
+            padding-left: 30px;
+        }
+        &-btn{
+            margin-top: 55px;
+            margin-bottom: 34px;
+        }
+        &-serviceDescription{
+            font-size: 16px;
+            font-weight: 400;
+            font-family: $font-ibm;
+            color: #646464;
+            line-height: 25px;
+        }
+        &-imgWrapper{
+            border-radius: 4px;
+            cursor: pointer;
+            overflow: hidden;
+            transition: all ease-in-out 0.6s;
+            &:hover .countHelp__help-img{
+                transform: scale(1.1);
+            }
+        }
+        &-img{
+            transition: all ease-in-out 0.4s;
+        }
+        &-title{
+            font-size: 48px;
+            font-family: $font-vidaloka;
+            font-weight: 400;
+            margin-top: -10px;
+        }
+        &-description{
+            color: #646464;
+            font-size: 16px;
+            font-family: $font-ibm;
+            font-weight: 400;
+            line-height: 25px;
+        }
+        &-icon{
+            margin-top: 20px;
+            height: 40px;
+            width: 50px;
+            margin-bottom: 20px;
+        }
+        &-serviceTitle{
+            font-size: 22px;
+            font-family: $font-vidaloka;
+            font-weight: 400;
+        }
+        &-medicare{
+            margin-left: 20px;
+        }
+        &-orange{
+            border: 2px solid #fd5a5a;
+            background-color: #fd5a5a;
+            transition: all 0.5s ease-in-out;
+            &:hover{
+                color: #fd5a5a;
+            }
+        }
+        &-green{
+            border: 2px solid #0fc392;
+            background-color: #0fc392;
+            transition: all 0.5s ease-in-out;
+            &:hover{
+                color: #0fc392;
+            }
+        }
+        &-link{
+            padding: 18px 40px;
+            text-transform: uppercase;
+            cursor: pointer;
+            z-index: 1;
+            color: white;
+            position: relative;
+            border-radius: 4px;
+            &:nth-child(1){
+                transition: all 0.5s ease-in-out;
+                &::before{
+                    position: absolute;
+                    content: "";
+                    left: 0;
+                    top: 0;
+                    bottom: 0;
+                    background-color: white;
+                    transition: all 0.5s ease-in-out;
+                    width: 0;
+                    z-index: -1;
+                }
+                &:hover{
+                    box-shadow: 0px 5px 8px 3px rgba(139, 139, 139, 0.3);
+                }
+                &:hover::before{
+                    width: 100%;
+                }
+            }
+            &:nth-child(2){
+                margin-left: 15px;
+                transition: all 0.5s ease-in-out;
+                &::before{
+                    position: absolute;
+                    content: "";
+                    left: 0;
+                    top: 0;
+                    bottom: 0;
+                    z-index: -1;
+                    background-color: white;
+                    transition: all 0.5s ease-in-out;
+                    width: 0;
+                }
+                &:hover{
+                    box-shadow: 0px 5px 8px 3px rgba(139, 139, 139, 0.3);
+                }
+                &:hover::before{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    @include max-breakpoint(1199){
+        &__help{
+            &-title{
+                margin-top:-8px;
+                font-size: 35px;
+            }
+        }
+    }
+    @include max-breakpoint(991){
+        &__content{
+            &-row{
+                max-width: 450px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+        &__count{
+            &-boxGirl{
+                margin: 30px auto;
+            }
+        }
+        &__help{
+            &-title{
+                margin-top: 30px;
+            }
+            &-description{
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+            &-medicare{
+                margin-left: initial;
+            }
+            &-rowImg{
+                margin-left: auto;
+                margin-right: auto;
+                max-width: 450px;
+            }
+            &-title{
+                text-align: center;
+                font-size: 25px;
+            }
+            &-row{
+                margin-top: 30px;
+                padding-left: 15px;
+            }
+            &-btn{
+                justify-content: center;
+                align-items: center;
+            }
+            &-icon{
+                margin-left: auto;
+                margin-right: auto;
+            }
+            &-serviceTitle{
+                text-align: center;
+            }
+            &-serviceDescription{
+                padding-left: 15px;
+                padding-right: 15px;
+                text-align: center;
+            }
+        }
+    }
+    @include max-breakpoint(767){
+        &__help{
+            &-serviceDescription{
+                font-size: 14px;
+            }
+        }
+    }
+    @include max-breakpoint(497){
+        &__help{
+            &-service{
+                flex-direction: column;
+            }
+            &-serviceDescription{
+                font-size: 14px;
+            }
+        }
+    }
+    @include max-breakpoint(413){
+        &__help{
+            &-link{
+                padding: 18px 20px;
+            }
+        }
+    }
+    @include max-breakpoint(329){
+        &__help{
+            &-link{
+                padding: 18px 40px;
+                &:nth-child(2){
+                    margin-left: initial;
+                    margin-top: 20px;
+                }
+            }
+            &-btn{
+                flex-direction: column;
+            }
+        }
+    }
+}

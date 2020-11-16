@@ -1,0 +1,109 @@
+// Start Banner-Menu
+
+// Start Header
+.overlay-header
+  span.close-overlay
+    i.fal.fa-times
+#header.header
+  .container
+    .header__menu
+      .header__menu-logo
+        a.header__menu-logo-link(href='#')
+          img(src='images/Logo.png')
+      .accordion-menu
+        .header__menu-button
+          .bar
+          .bar
+          .bar
+        ul.header__menu-list
+          li.list__item
+            a.list__item-link(href='#') Home
+          li.list__item
+            a.list__item-link(href='#') About
+          li.list__item
+            a.list__item-link(href='#') Causes
+          li.list__item
+            a.list__item-link(href='#') Pages
+          li.list__item
+            a.list__item-link(href='#') Blog
+          li.list__item
+            a.list__item-link(href='#') Contact
+      ul.header__menu-icon
+        li.icon__list
+          a.icon__search(href='#' data-modal='modals')
+            i.far.fa-search
+        li.icon__list
+          a.shopping-bag(href='#')
+            i.fal.fa-shopping-bag
+          ul.icon__list-drop
+            li.drop__item
+              a.drop__item-remove(href='#')
+                i.ti-close
+              a.drop__item-text(href='#')
+                img(src="images/Bitmap2.jpg", alt="")
+                | Provide Health Food
+              span $700
+            li.drop__item
+              a.drop__item-remove(href='#')
+                i.ti-close
+              a.drop__item-text(href='#')
+                img(src="images/Bitmap3.jpg", alt="")
+                | Clothes For Everyone
+              span $700
+            li.drop__item
+              a.drop__item-remove(href='#')
+                i.ti-close
+              a.drop__item-text(href='#')
+                img(src="images/Bitmap6.jpg", alt="")
+                | Food For Orphan
+              span $700
+            li.drop__item
+              .drop__item-total
+                | Subtotal:
+                span $2100
+              .drop__item-button
+                a.btn-fill-dark.float-left(href='#') View More
+                a.btn-fill-color.float-right(href='#') Checkout
+    ul.header__menu-mobile
+      li.mobile__logo
+        a.mobile__logo-link(href='#')
+          img(src='images/Logo.png')
+      li.mobile__item
+        a.mobile__item-link(href='#') Home
+      li.mobile__item
+        a.mobile__item-link(href='#') About
+      li.mobile__item
+        a.mobile__item-link(href='#') Causes
+      li.mobile__item
+        a.mobile__item-link(href='#') Pages
+      li.mobile__item
+        a.mobile__item-link(href='#') Blog
+      li.mobile__item
+        a.mobile__item-link(href='#') Contact
+      li.mobile__search
+        form.mobile__search-form
+          input.search-field(type="search" placeholder="Type your keyword...")
+          button.search-submit(type="submit")
+            i.fal.fa-search
+      li.mobile__icon
+        a.mobile__icon-link(href='#')
+          i.fal.fa-shopping-bag
+          |  0 Item:
+          span $0.00
+// End Header
+
+// Start Banner
+.banner
+  .container
+    .banner__background
+      .banner__background-image
+        img(src="images/banner-menu.png", alt="")
+    .row
+      .col-12.col-lg8.text-center
+        .banner__content
+          .banner__content-subtitle Since 1975
+          .banner__content-title Charity Efforts Are
+            br
+            | For Happiness.
+        a.banner__content-button(href='#') Learn More
+// End Banner

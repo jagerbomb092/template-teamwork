@@ -1,0 +1,81 @@
+//- Footer
+include ../mixins/title.pug
+.footer
+    .container
+        .row
+            +title('new & articles', 'Get Update Every Week')
+            .col-lg-8.mx-auto.text-center
+                .form
+                    .footer__form
+                        input(type="text" placeholder="ENTER YOUR EMAIL")
+                        .footer__form-button
+                            a(href="#").button subscribe now
+                            i.fal.fa-arrow-right
+        .footer__box
+            .row
+                .col-lg-3.col-sm-6
+                    ul.footer__list Customer Care
+                        li Food Service
+                        li Track Order
+                        li Shop Categories
+                        li Get Wishlist
+                        li Social Content
+                        li Free Support 
+                .col-lg-3.col-sm-6
+                    ul.footer__list Contact Info
+                        li House no 25, dreen street 
+                            |
+                            br
+                            |   melborn dowltown     
+                        li 02-362-254-256 
+                        li info@secode.com
+                        li www.secode.com
+                .col-lg-3.col-sm-6
+                    ul.footer__list Charity for
+                        li Poor Kids
+                        li Orphan
+                        li Education
+                        li Safe Food
+                        li Clean Water
+                        li Homeless                 
+                .col-lg-3.col-sm-6
+                    ul.footer__list Our Gallery
+                        .row
+                            .col-md-4.mb-2.px-1.my-0.col-4
+                                .footer__list-overlay
+                                    img(src="./images/img4.png", alt="")
+                            .col-md-4.mb-2.px-1.col-4
+                                .footer__list-overlay
+                                    img(src="./images/img5.png", alt="")
+                            .col-md-4.mb-2.px-1.col-4
+                                .footer__list-overlay
+                                    img(src="./images/img6.png", alt="")
+                            .col-md-4.px-1.col-4
+                                .footer__list-overlay
+                                    img(src="./images/img7.png", alt="")
+                            .col-md-4.px-1.col-4
+                                .footer__list-overlay
+                                    img(src="./images/img8.png", alt="")
+                            .col-md-4.px-1.col-4
+                                .footer__list-overlay
+                                    img(src="./images/img9.png", alt="")
+        
+    
+        
+    .footer__copy
+        .container
+            .row
+                .col-lg-4.col-md-4
+                    .footer__copy-logo
+                        img(src="./images/logo.png", alt="")
+                .col-lg-4.col-md-4.footer__copy-text                    
+                    p 
+                        | Copyright © 2019 
+                        span Nusafe.                    
+                        | All Rights Reserved.
+                .col-lg-4.col-md-4.mx-auto.footer__copy-icon                    
+                    i.fab.fa-facebook-f
+                    i.fab.fa-twitter
+                    i.fab.fa-google-plus-g
+                    i.fab.fa-youtube
+//- End Footer

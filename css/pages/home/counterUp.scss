@@ -1,0 +1,75 @@
+//////////////// Start CounterUp //////////////////////////
+.counter {
+  padding: 130px 0;
+  &__slider {
+    margin-left: 45px;
+    @include max-breakpoint(320) {
+      margin-left: 0px;
+      font-size: 17px !important;
+    }
+  }
+  &__icon {
+    position: relative;
+    &-bg {
+      width: 54px;
+      height: 54px;
+      border-radius: 50%;
+      z-index: -1;
+    }
+    .pink {
+      background-color: #ffd5d5;
+    }
+    .blue {
+      background-color: #c2ebe0;
+    }
+    .brown {
+      background-color: #fbc7a8;
+    }
+    .dark-blue {
+      background-color: #bae3f9;
+    }
+    svg {
+      position: absolute;
+      top: 50%;
+      transform: translate(28px, -50%);
+    }
+  }
+  &__box {
+    font-family: "Vidaloka", serif;
+    color: #191919;
+    font-weight: 400;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 75px 0;
+    @include max-breakpoint(768) {
+      margin-bottom: 15px;
+      grid-template-columns: 40px 0;
+      &-number {
+        font-size: 25px !important;
+      }
+      &-text {
+        font-size: 20px !important;
+      }
+    }
+    @include max-breakpoint(576) {
+      &-text {
+        margin-right: 0px !important;
+      }
+    }
+    &-number {
+      font-size: 50px;
+      padding: 10px;
+    }
+    &-text {
+      font-size: 27px;
+      margin-right: 27px;
+      padding: 15px;
+    }
+  }
+}
+
+.owl-nav {
+  display: none;
+}
+
+//////////////// End CounterUp //////////////////////////

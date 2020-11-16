@@ -1,0 +1,121 @@
+// Start Video
+.video {
+  position: relative;
+  padding: 120px 0;
+  height: 800px;
+  &__background {
+    &-image {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-attachment: fixed;
+      background-image: url(../images/video.png);
+      background-repeat: no-repeat;
+      background-position: center bottom;
+      background-size: cover;
+      z-index: -2;
+    }
+    &-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #0b0a0e;
+      opacity: 0.8;
+      z-index: -2;
+    }
+  }
+  .title {
+    color: #fff;
+    &__subHeading {
+      color: #fff;
+    }
+    &__heading {
+      color: #fff;
+    }
+  }
+  &__button {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    opacity: 1;
+    width: 100%;
+    @include breakpoint(575) {
+      top: 60%;
+    }
+    &-icon {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      height: 80px;
+      width: 80px;
+      border-radius: 50%;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.2);
+      z-index: 5;
+      transition: 0.5s;
+      &::before,
+      &::after {
+        opacity: 0;
+        content: "";
+        display: block;
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        top: 50%;
+        left: 50%;
+        border-radius: 50%;
+        border: 5px solid rgba(255, 255, 255, 0.2);
+        -webkit-animation: zoomBig 3.25s linear infinite;
+        animation: zoomBig 3.25s linear infinite;
+        -webkit-animation-delay: 0s;
+        animation-delay: 0s;
+        z-index: -1;
+      }
+      i {
+        color: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 20px;
+        transition: 0.5s;
+      }
+      &:hover {
+        background: white;
+        &::before,
+        &::after {
+          border-color: white;
+        }
+        i {
+          color: black;
+        }
+      }
+    }
+  }
+}
+
+@keyframes zoomBig {
+  0% {
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 1;
+    border-width: 3px;
+  }
+  40% {
+    opacity: 1;
+    border-width: 2px;
+  }
+  65% {
+    border-width: 1px;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0;
+    border-width: 1px;
+  }
+}
+// End Video
